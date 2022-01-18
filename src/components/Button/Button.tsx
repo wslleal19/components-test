@@ -1,4 +1,5 @@
 import React from "react";
+import '../customTheme';
 
 export interface ButtonProps {
     children: any;
@@ -32,6 +33,7 @@ const Button = (props: ButtonProps) => {
     const setUpClasses = () => {
       let classes:string = '';
       classes = 'fluence-ui-button';
+
       
       if(props.type == 'dashed') classes += ' fluence-ui-button-type-dashed';
       if(props.type == 'text') classes += ' fluence-ui-button-type-text';
