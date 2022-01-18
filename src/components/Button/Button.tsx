@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface ButtonProps {
-    label: string;
+    children: any;
     block?: boolean;
     disabled?: boolean;
     htmlType?: string;
@@ -46,12 +46,11 @@ const Button = (props: ButtonProps) => {
     }
 
     const isDisabledButton = () => {
-      if(props.disabled) return true;
-      return false;
+     return props.disabled ?  true : false;
     }
   
     return(
-         <button onClick={props.onClick} disabled={isDisabledButton()} style={setUpStyle()} className={setUpClasses()}>{props.label}</button>
+         <button onClick={props.onClick} disabled={isDisabledButton()} style={setUpStyle()} className={setUpClasses()}>{props.children}</button>
     )
 };
   

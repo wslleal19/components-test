@@ -24,7 +24,6 @@ const Title = (props: TextProps) => {
       let classes:string = '';
       classes = 'fluence-ui-title';
       
-
       if(props.strong == true) classes += ' fluence-ui-title-strong';
       if(props.italic == true) classes += ' fluence-ui-title-italic';
 

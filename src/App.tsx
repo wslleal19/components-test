@@ -5,9 +5,6 @@ import Button from './components/Button/Button';
 import Title from './components/Title/Title';
 import Text from './components/Text/Text';
 
-
-
-
 function App() {
 
   const click = () => {
@@ -16,7 +13,7 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor:'#e8e8e8', height: '100vh'}}>
-        <Title size={1}>H21 title</Title>
+        <Button disabled={false}>button disabled</Button>
     </div>
   );
 }

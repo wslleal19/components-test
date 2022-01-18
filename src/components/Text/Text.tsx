@@ -25,7 +25,6 @@ const Text = (props: TextProps) => {
       let classes:string = '';
       classes = 'fluence-ui-text';
       
-
       if(props.strong == true) classes += ' fluence-ui-text-strong';
       if(props.italic == true) classes += ' fluence-ui-text-italic';
 
