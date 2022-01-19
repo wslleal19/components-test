@@ -1,0 +1,14 @@
+.fluence-ui-text{
+    color: #000;
+    overflow-wrap: break-word;
+    margin: 12px;
+}
+.fluence-ui-text-strong{
+    font-weight: bold;
+}
+.fluence-ui-text-italic{
+    font-style: italic;
+}
+[data-theme='dark'] .fluence-ui-text{
+    color: rgba(255, 255, 255, 0.85);
+}

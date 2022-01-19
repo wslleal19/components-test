@@ -1,0 +1,38 @@
+.fluence-ui-title{
+    color: #000;
+    overflow-wrap: break-word;
+    margin: 12px;
+}
+.fluence-ui-title-strong{
+    font-weight: bold;
+}
+.fluence-ui-title-italic{
+    font-style: italic;
+}
+h1.fluence-ui-title{
+    font-size: 34px;
+}
+h2.fluence-ui-title{
+    font-size: 30px;
+}
+h3.fluence-ui-title{
+    font-size: 26px;
+}
+h4.fluence-ui-title{
+    font-size: 22px;
+}
+h5.fluence-ui-title{
+    font-size: 18px;
+}
+h6.fluence-ui-title{
+    font-size: 14px;
+}
+.fluence-ui-title-strong{
+    font-weight: bold;
+}
+.fluence-ui-title-italic{
+    font-style: italic;
+}
+[data-theme='dark'] .fluence-ui-title{
+    color: rgba(255, 255, 255, 0.85);
+}
