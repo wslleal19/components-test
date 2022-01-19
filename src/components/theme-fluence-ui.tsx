@@ -1,5 +1,5 @@
 const theme:any = {
-    darkMode:false,
+    darkMode:true,
     setColorsInComponent: true,
     'colors': {
         'primary': '#0070f3',

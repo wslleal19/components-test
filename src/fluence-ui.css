@@ -5,4 +5,9 @@
     --fluence-ui-base-margin-text: 4px;
     --fluence-ui-base-margin-title: 4px;
     --fluence-ui-base-margin-container: 12px;
+    /* --fluence-ui-dark-color: #1f1f1f; */
+    --fluence-ui-dark-color: rgba(18,18,18,1);
+    --fluence-ui-dark-color-level2: rgba(18,18,18,0.9);
+    --fluence-ui-dark-color-level3: rgba(18,18,18,0.85);
+    
   }
