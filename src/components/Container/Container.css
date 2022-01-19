@@ -1,0 +1,11 @@
+.fluence-ui-container{
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    height: 100%;
+    padding: var(--fluence-ui-base-margin-container);
+}
+.fluence-ui-container-fluid{
+    width: 100%;
+    border: 2px solid red;
+}

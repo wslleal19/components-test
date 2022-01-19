@@ -1,7 +1,7 @@
 .fluence-ui-title{
     color: #000;
     overflow-wrap: break-word;
-    margin: 12px;
+    margin: var(--fluence-ui-base-margin-title);
 }
 .fluence-ui-title-strong{
     font-weight: bold;

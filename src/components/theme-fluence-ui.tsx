@@ -1,5 +1,5 @@
 const theme:any = {
-    darkMode:true,
+    darkMode:false,
     setColorsInComponent: true,
     'colors': {
         'primary': '#0070f3',
@@ -12,6 +12,7 @@ const theme:any = {
     componentsConfig: {
         "Button": {
             size: 'default',
+            baseMargin: '5px',
         },
     }
 }

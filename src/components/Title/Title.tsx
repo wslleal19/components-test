@@ -1,4 +1,5 @@
 import React from "react";
+import './Title.css'
 
 export interface TextProps {
     children:any;
@@ -6,6 +7,7 @@ export interface TextProps {
 
     color?:string;
     strong?: boolean;
+    margin?: string;
     padding?: any;
     italic?: boolean;
 }
@@ -16,6 +18,7 @@ const Title = (props: TextProps) => {
 
       if(props.color) style.color = props.color;
       if(props.padding) style.padding = props.padding;
+      if(props.margin) style.margin = props.margin;
 
       return style;
     }

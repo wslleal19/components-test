@@ -7,6 +7,7 @@ export interface TextProps {
     color?:string;
     strong?: boolean;
     padding?: any;
+    margin?: string;
     italic?: boolean;
 
     paragraph?: boolean;
@@ -18,6 +19,7 @@ const Text = (props: TextProps) => {
 
       if(props.color) style.color = props.color;
       if(props.padding) style.padding = props.padding;
+      if(props.margin) style.margin = props.margin;
 
       return style;
     }

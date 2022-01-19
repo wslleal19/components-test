@@ -2,4 +2,7 @@
     --fluence-ui-primary-color: #1187f5;
     --fluence-ui-primary-color-hover: #389efc;
     --fluence-ui-primary-color-active: #1f5a8f;
+    --fluence-ui-base-margin-text: 4px;
+    --fluence-ui-base-margin-title: 4px;
+    --fluence-ui-base-margin-container: 12px;
   }

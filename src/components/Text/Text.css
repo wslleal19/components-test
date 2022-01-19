@@ -1,7 +1,7 @@
 .fluence-ui-text{
     color: #000;
     overflow-wrap: break-word;
-    margin: 12px;
+    margin: var(--fluence-ui-base-margin-text);
 }
 .fluence-ui-text-strong{
     font-weight: bold;
