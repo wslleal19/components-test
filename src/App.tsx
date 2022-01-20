@@ -4,6 +4,8 @@ import Button from './components/Button/Button';
 import Title from './components/Title/Title';
 import Text from './components/Text/Text';
 import Container from './components/Container/Container';
+import Box from './components/Box/Box';
+
 
 
 function App() {
@@ -18,8 +20,10 @@ function App() {
         <Title size={2}>Título teste</Title>
         <Title size={4}>Título teste</Title>
         <Button disabled={false}>Entrar na conta</Button>
-        <Text>Texto bla bla teste</Text>
-        <Text>Texto bla bla teste</Text>
+        <Box>
+          <Text>Texto bla bla teste</Text>
+          <Text>Texto bla bla teste</Text>
+        </Box>
         <Text>Texto bla bla teste</Text>
         <Text>Texto bla bla teste</Text>
         <Text>Texto bla bla teste</Text>

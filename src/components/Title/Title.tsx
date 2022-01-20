@@ -1,7 +1,7 @@
 import React from "react";
 import './Title.css'
 
-export interface TextProps {
+export interface TitleProps {
     children:any;
     size: number;
 
@@ -12,7 +12,7 @@ export interface TextProps {
     italic?: boolean;
 }
 
-const Title = (props: TextProps) => {
+const Title = (props: TitleProps) => {
     const setUpStyle = () => {
       let style:any = {};
 

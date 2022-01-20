@@ -2,7 +2,7 @@
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-    height: 100%;
+    height: auto;
     padding: var(--fluence-ui-base-margin-container);
 }
 .fluence-ui-container-fluid{

@@ -1,7 +1,7 @@
 import React from "react";
 import './Container.css';
 
-export interface TextProps {
+export interface ContainerProps {
     children:any;
 
     fluid?:boolean
@@ -13,7 +13,7 @@ export interface TextProps {
     height?:string;
 }
 
-const Container = (props: TextProps) => {
+const Container = (props: ContainerProps) => {
     const setUpStyle = () => {
       let style:any = {};
 
