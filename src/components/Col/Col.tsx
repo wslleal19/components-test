@@ -1,11 +1,15 @@
 import React from "react";
-import './Row.css';
+import './Col.css';
 
-export interface RowProps {
+export interface ColProps {
     children:any;
+
+    sm? :number;
+    md? :number;
+    lg? :number;
 }
 
-const Row = (props: RowProps) => {
+const Col = (props: ColProps) => {
     const setUpStyle = () => {
       let style:any = {};
 
@@ -22,9 +26,12 @@ const Row = (props: RowProps) => {
 
     const setUpClasses = () => {
       let classes:string = '';
-      classes = 'fluence-ui-row';
+      classes = 'fluence-ui-col';
       
-     // if(props.fluid == true) classes += ' fluence-ui-container-fluid';
+      if(props.sm) classes += ' fluence-ui-col-sm-' + props.sm;
+      if(props.md) classes += ' fluence-ui-col-md-' + props.md;
+      if(props.lg) classes += ' fluence-ui-col-lg-' + props.lg;
+     //classes += ' fluence-ui-container-fluid';
 
       return classes;
     }
@@ -34,4 +41,4 @@ const Row = (props: RowProps) => {
     )
 };
   
-export default Row;
+export default Col;

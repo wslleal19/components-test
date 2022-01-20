@@ -5,6 +5,9 @@ import Title from './components/Title/Title';
 import Text from './components/Text/Text';
 import Container from './components/Container/Container';
 import Box from './components/Box/Box';
+import Col from './components/Col/Col';
+import Row from './components/Row/Row';
+
 
 
 
@@ -16,17 +19,18 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor:'#e8e8e8', height: '100vh'}}>
-      <Container>
-        <Title size={2}>Título teste</Title>
-        <Title size={4}>Título teste</Title>
-        <Button disabled={false}>Entrar na conta</Button>
-        <Box space={'20px'}>
-          <Text>Texto bla bla teste</Text>
-          <Text>Texto bla bla teste</Text>
-        </Box>
-        <Text>Texto bla bla teste</Text>
-        <Text>Texto bla bla teste</Text>
-        <Text>Texto bla bla teste</Text>
+      <Container backgroundColor={'#d4d4d5'} height={'200px'}>
+        <Row>
+          <Col sm={2} md={2}>
+            Item 1
+          </Col>
+          <Col sm={5} md={8}>
+            Item 2
+          </Col>
+          <Col sm={5} md={2}>
+            Item 3
+          </Col>
+        </Row>
       </Container>
     </div>
   );

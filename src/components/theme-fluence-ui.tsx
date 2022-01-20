@@ -1,5 +1,5 @@
 const theme:any = {
-    darkMode:true,
+    darkMode:false,
     'colors': {
         'primary': '#0070f3',
         'secondary': '#f5f5f5',

@@ -11,3 +11,6 @@
     --fluence-ui-dark-color-level3: rgba(18,18,18,0.85);
     
   }
+  * {
+    box-sizing: border-box;
+  }
