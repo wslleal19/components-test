@@ -1,5 +1,6 @@
 import React from "react";
-import './Button.css'
+import './Button.css';
+import theme from '../theme-fluence-ui';
 
 export interface ButtonProps {
     children: any;
@@ -47,12 +48,22 @@ const Button = (props: ButtonProps) => {
       return classes;
     }
 
+    const setUpCustomTheme = () => {
+      let style:any = {};
+      if(theme.hasOwnProperty('componentsConfig')){
+        if(theme.componentsConfig.hasOwnProperty('Button')){
+          if(theme.componentsConfig.Button.hasOwnProperty('baseMargin')) style.margin = theme.componentsConfig.Button.baseMargin;
+        }
+      }
+      return style;
+    }
+
     const isDisabledButton = () => {
       return props.disabled ?  true : false;
     }
   
     return(
-         <button onClick={props.onClick} disabled={isDisabledButton()} style={setUpStyle()} className={setUpClasses()}>{props.children}</button>
+      <button onClick={props.onClick} disabled={isDisabledButton()} style={{...setUpStyle(),...setUpCustomTheme()}} className={setUpClasses()}>{props.children}</button>
     )
 };
   

@@ -20,7 +20,7 @@ function App() {
         <Title size={2}>Título teste</Title>
         <Title size={4}>Título teste</Title>
         <Button disabled={false}>Entrar na conta</Button>
-        <Box>
+        <Box space={'20px'}>
           <Text>Texto bla bla teste</Text>
           <Text>Texto bla bla teste</Text>
         </Box>

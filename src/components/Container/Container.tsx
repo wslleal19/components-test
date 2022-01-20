@@ -1,5 +1,6 @@
 import React from "react";
 import './Container.css';
+import theme from '../theme-fluence-ui';
 
 export interface ContainerProps {
     children:any;
@@ -35,8 +36,20 @@ const Container = (props: ContainerProps) => {
       return classes;
     }
 
+    const setUpCustomTheme = () => {
+      let style:any = {};
+      if(theme.hasOwnProperty('componentsConfig')){
+        if(theme.componentsConfig.hasOwnProperty('Container')){
+          if(theme.componentsConfig.Container.hasOwnProperty('baseMargin')) style.margin = theme.componentsConfig.Container.baseMargin;
+          if(theme.componentsConfig.Container.hasOwnProperty('basePadding')) style.padding = theme.componentsConfig.Container.basePadding;
+        }
+      }
+      
+      return style;
+    }
+
     return (
-        <div style={setUpStyle()} className={setUpClasses()}>{props.children}</div>
+        <div style={{...setUpStyle(),...setUpCustomTheme()}} className={setUpClasses()}>{props.children}</div>
     )
 };
   

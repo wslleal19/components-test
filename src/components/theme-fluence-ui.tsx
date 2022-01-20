@@ -1,6 +1,5 @@
 const theme:any = {
     darkMode:true,
-    setColorsInComponent: true,
     'colors': {
         'primary': '#0070f3',
         'secondary': '#f5f5f5',
@@ -11,8 +10,16 @@ const theme:any = {
     // DEV
     componentsConfig: {
         "Button": {
-            size: 'default',
+          //  size: 'default',
             baseMargin: '5px',
+        },
+        "Container": {
+            //  size: 'default',
+              basePadding: '12px',
+        },
+        "Text": {
+            //  size: 'default',
+              basePadding: '12px',
         },
     }
 }
