@@ -1,5 +1,6 @@
 import React from "react";
 import './Text.css';
+import theme from '../theme-fluence-ui';
 
 export interface TextProps {
     children:any;
@@ -34,11 +35,23 @@ const Text = (props: TextProps) => {
       return classes;
     }
 
+    const setUpCustomTheme = () => {
+      let style:any = {};
+      if(theme.hasOwnProperty('componentsConfig')){
+        if(theme.componentsConfig.hasOwnProperty('Text')){
+          if(theme.componentsConfig.Text.hasOwnProperty('baseMargin')) style.margin = theme.componentsConfig.Text.baseMargin;
+          if(theme.componentsConfig.Text.hasOwnProperty('basePadding')) style.padding = theme.componentsConfig.Text.basePadding;
+        }
+      }
+      
+      return style;
+    }
+
     const renderElement = () => {
         if(props.paragraph)
-            return (<p style={setUpStyle()} className={setUpClasses()}>{props.children}</p>);
+            return (<p style={{...setUpStyle(),...setUpCustomTheme()}} className={setUpClasses()}>{props.children}</p>);
         else
-            return (<div style={setUpStyle()} className={setUpClasses()}>{props.children}</div>);
+            return (<div style={{...setUpStyle(),...setUpCustomTheme()}} className={setUpClasses()}>{props.children}</div>);
     }
 
     return renderElement();

@@ -1,5 +1,6 @@
 import React from "react";
 import './Title.css'
+import theme from '../theme-fluence-ui';
 
 export interface TitleProps {
     children:any;
@@ -33,9 +34,21 @@ const Title = (props: TitleProps) => {
       return classes;
     }
 
+    const setUpCustomTheme = () => {
+      let style:any = {};
+      if(theme.hasOwnProperty('componentsConfig')){
+        if(theme.componentsConfig.hasOwnProperty('Title')){
+          if(theme.componentsConfig.Title.hasOwnProperty('baseMargin')) style.margin = theme.componentsConfig.Title.baseMargin;
+          if(theme.componentsConfig.Title.hasOwnProperty('basePadding')) style.padding = theme.componentsConfig.Title.basePadding;
+        }
+      }
+      
+      return style;
+    }
+
     const renderElement = () => {
         const Htag:any = `h${props.size}`;
-        return (<Htag style={setUpStyle()} className={setUpClasses()}>{props.children}</Htag>)
+        return (<Htag style={{...setUpStyle(),...setUpCustomTheme()}} className={setUpClasses()}>{props.children}</Htag>)
     } 
 
     return renderElement();

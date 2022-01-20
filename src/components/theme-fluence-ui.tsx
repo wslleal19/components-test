@@ -8,20 +8,22 @@ const theme:any = {
 
 
     // DEV
+    /*
     componentsConfig: {
         "Button": {
-          //  size: 'default',
             baseMargin: '5px',
         },
         "Container": {
-            //  size: 'default',
-              basePadding: '12px',
+            basePadding: '12px',
         },
         "Text": {
-            //  size: 'default',
-              basePadding: '12px',
+            baseMargin: '4px',
+        },
+        "Title": {
+            basePadding: '12px',
         },
     }
+    */
 }
 
 export default theme;
