@@ -21,14 +21,14 @@ function App() {
     <div className="App" style={{backgroundColor:'#e8e8e8', height: '100vh'}}>
       <Container backgroundColor={'#d4d4d5'} height={'200px'}>
         <Row>
-          <Col sm={2} md={2}>
-            Item 1
+          <Col sm={0} md={2}>
+            
           </Col>
-          <Col sm={5} md={8}>
-            Item 2
+          <Col sm={12} md={8}>
+            Box login
           </Col>
-          <Col sm={5} md={2}>
-            Item 3
+          <Col sm={0} md={2}>
+       
           </Col>
         </Row>
       </Container>

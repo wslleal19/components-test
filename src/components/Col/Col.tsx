@@ -7,6 +7,8 @@ export interface ColProps {
     sm? :number;
     md? :number;
     lg? :number;
+    xl? :number;
+    xxl? :number;
 }
 
 const Col = (props: ColProps) => {
@@ -31,7 +33,8 @@ const Col = (props: ColProps) => {
       if(props.sm) classes += ' fluence-ui-col-sm-' + props.sm;
       if(props.md) classes += ' fluence-ui-col-md-' + props.md;
       if(props.lg) classes += ' fluence-ui-col-lg-' + props.lg;
-     //classes += ' fluence-ui-container-fluid';
+      if(props.xl) classes += ' fluence-ui-col-lg-' + props.xl;
+      if(props.xxl) classes += ' fluence-ui-col-lg-' + props.xl;
 
       return classes;
     }
