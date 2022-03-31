@@ -20,6 +20,7 @@ const Title = (props: TitleProps) => {
       if(props.color) style.color = props.color;
       if(props.padding) style.padding = props.padding;
       if(props.margin) style.margin = props.margin;
+      
 
       return style;
     }
